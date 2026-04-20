@@ -1,27 +1,31 @@
+"use client";
 import React from 'react';
 import styles from './Hero.module.css';
 import { Button } from '../ui/Button';
+import { useStore } from '@/lib/store';
+import { dictionaries } from '@/lib/i18n';
 
 export const Hero = () => {
+  const { language } = useStore();
+  const dict = dictionaries[language].hero;
+
   return (
     <section className={`section ${styles.hero}`} id="about">
       <div className={`container ${styles.content}`}>
         {/* Left Side: Text */}
         <div className={styles.textContent}>
-          <div className={styles.badge}>Status: Building</div>
+          <div className={styles.badge}>{dict.status}</div>
           <h1 className="display-lg">
-            FUTURE<br />
-            <span className="gradient-text">SOFTWARE</span><br />
-            ENGINEER.
+            {dict.title1}<br />
+            <span className="gradient-text">{dict.title2}</span><br />
+            {dict.title3}
           </h1>
           <p className={`body-lg ${styles.description}`}>
-            I forge sophisticated digital systems with a focus on clean code, 
-            resilient architecture, and unparalleled user experiences. 
-            Bridging the gap between design and deep technical implementations.
+            {dict.description}
           </p>
           <div className={styles.actions}>
-            <Button variant="primary">View Systems</Button>
-            <Button variant="tertiary">Get in Touch</Button>
+            <Button variant="primary">{dict.btnPrimary}</Button>
+            <Button variant="tertiary">{dict.btnSecondary}</Button>
           </div>
         </div>
 
@@ -31,7 +35,7 @@ export const Hero = () => {
           <div className={styles.glassCard}>
             <div className={styles.cardInner}>
                 <div style={{ fontFamily: 'var(--font-space-grotesk)', color: 'var(--on-surface)' }}>
-                  System Architecture Overview
+                  {dict.sysTitle}
                 </div>
                 {/* Simulated Terminal / Technical UI effect */}
                 <div 
@@ -50,10 +54,10 @@ export const Hero = () => {
                   }}
                 >
                   <div>&gt; initialize_kernel()</div>
-                  <div style={{ color: 'var(--primary)' }}>[OK] Core modules loaded.</div>
+                  <div style={{ color: 'var(--primary)' }}>{dict.initMsg}</div>
                   <div>&gt; render_ui()</div>
-                  <div style={{ color: 'var(--primary)' }}>[OK] Glassmorphism established.</div>
-                  <div>&gt; await connection...</div>
+                  <div style={{ color: 'var(--primary)' }}>{dict.renderMsg}</div>
+                  <div>{dict.awaitMsg}</div>
                 </div>
                 
                 <div className={styles.techLine}>

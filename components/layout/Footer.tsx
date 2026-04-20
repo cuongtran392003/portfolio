@@ -1,6 +1,12 @@
+"use client";
 import React from 'react';
+import { useStore } from '@/lib/store';
+import { dictionaries } from '@/lib/i18n';
 
 export const Footer = () => {
+  const { language } = useStore();
+  const dict = dictionaries[language].footer;
+
   return (
     <footer style={{ 
       padding: '2rem 5%', 
@@ -16,7 +22,7 @@ export const Footer = () => {
         ARCHITECTURAL INTELLECT
       </div>
       <div className="label-md" style={{ color: 'var(--on-surface-variant)' }}>
-        © {new Date().getFullYear()} All rights reserved. System built by Cuong.
+        © {new Date().getFullYear()} {dict.rights}
       </div>
       <div style={{ display: 'flex', gap: '1.5rem' }} className="label-md">
         <a href="#" style={{ color: 'var(--on-surface-variant)' }}>Twitter</a>

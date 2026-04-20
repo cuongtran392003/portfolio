@@ -1,41 +1,46 @@
+"use client";
 import React from 'react';
 import styles from './Experience.module.css';
-
-const experiences = [
-  {
-    role: "Senior Frontend Architect",
-    company: "TechNexus Systems",
-    duration: "2024 - Present",
-    description: "Spearheaded the migration of a legacy monolithic architecture to a modern Next.js micro-frontend ecosystem. Improved performance scores by 45% and established the foundational design system used across 12 product lines.",
-    skills: ["React", "Next.js", "TypeScript", "System Design"]
-  },
-  {
-    role: "Software Engineer II",
-    company: "DataCore Analytics",
-    duration: "2022 - 2024",
-    description: "Developed high-throughput data visualization dashboards handling millions of data points in real-time. Created reusable, accessible component libraries that reduced development time for internal teams by 30%.",
-    skills: ["Vue.js", "D3.js", "Node.js", "WebGL"]
-  },
-  {
-    role: "Frontend Developer",
-    company: "Creative Digital Solutions",
-    duration: "2020 - 2022",
-    description: "Built pixel-perfect, responsive web applications for high-profile clients. Collaborated closely with UI/UX designers to translate complex Figma designs into performant frontend code.",
-    skills: ["JavaScript", "React", "CSS Modules", "Framer Motion"]
-  }
-];
+import { useStore } from '@/lib/store';
+import { dictionaries } from '@/lib/i18n';
 
 export const Experience = () => {
+  const { language } = useStore();
+  const dict = dictionaries[language].experience;
+
+  const experiences = [
+    {
+      role: dict.roles.role1.title,
+      company: dict.roles.role1.company,
+      duration: dict.roles.role1.duration,
+      description: dict.roles.role1.desc,
+      skills: ["React", "Next.js", "TypeScript", "System Design"]
+    },
+    {
+      role: dict.roles.role2.title,
+      company: dict.roles.role2.company,
+      duration: dict.roles.role2.duration,
+      description: dict.roles.role2.desc,
+      skills: ["Vue.js", "D3.js", "Node.js", "WebGL"]
+    },
+    {
+      role: dict.roles.role3.title,
+      company: dict.roles.role3.company,
+      duration: dict.roles.role3.duration,
+      description: dict.roles.role3.desc,
+      skills: ["JavaScript", "React", "CSS Modules", "Framer Motion"]
+    }
+  ];
+
   return (
     <section className="section" id="experience">
       <div className="container">
         <div className={styles.sectionHeader}>
           <h2 className="display-lg">
-            JOURNAL OF <span className="gradient-text">GROWTH.</span>
+            {dict.title1}<span className="gradient-text">{dict.title2}</span>
           </h2>
           <p className="body-lg" style={{ maxWidth: '600px', marginTop: '1rem' }}>
-            A chronological mapping of my professional evolution, highlighting technical
-            advancements and architectural contributions.
+            {dict.description}
           </p>
         </div>
 
