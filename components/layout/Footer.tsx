@@ -19,7 +19,7 @@ export const Footer = () => {
       gap: '1rem'
     }}>
       <div style={{ fontFamily: 'var(--font-space-grotesk)', fontWeight: 700, color: 'var(--on-surface)' }}>
-        ARCHITECTURAL INTELLECT
+        CUONG TRAN.
       </div>
       <div className="label-md" style={{ color: 'var(--on-surface-variant)' }}>
         © {new Date().getFullYear()} {dict.rights}

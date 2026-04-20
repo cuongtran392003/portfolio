@@ -14,8 +14,30 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio | Software Engineer",
-  description: "The Architectural Intellect - Portfolio of a Software Engineer",
+  title: "Cuong Tran | Software Engineer",
+  description: "Portfolio of Cuong Tran, a Software Engineer focusing on clean code, scalable architecture, and modern web experiences. Bridging design with technical implementation.",
+  keywords: ["Cuong Tran", "Software Engineer", "Frontend Developer", "Next.js", "React", "Portfolio", "Web Development"],
+  authors: [{ name: "Cuong Tran", url: "https://github.com/cuongtran392003" }],
+  creator: "Cuong Tran",
+  metadataBase: new URL('https://cuongtran.dev'), // Update to actual domain later
+  openGraph: {
+    title: "Cuong Tran | Software Engineer",
+    description: "Portfolio of Cuong Tran, building sophisticated digital systems.",
+    url: "https://cuongtran.dev",
+    siteName: "Cuong Tran Portfolio",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cuong Tran | Software Engineer",
+    description: "Portfolio of Cuong Tran, building sophisticated digital systems.",
+    creator: "@cuongtran",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  }
 };
 
 export default function RootLayout({

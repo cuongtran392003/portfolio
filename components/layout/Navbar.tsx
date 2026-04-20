@@ -21,7 +21,7 @@ export const Navbar = () => {
   return (
     <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={styles.logo}>
-        ARCHITECTURAL IN<span className="gradient-text">TELLECT</span>
+        CUONG <span className="gradient-text">TRAN.</span>
       </div>
       
       <div className={styles.navLinks}>
