@@ -1,0 +1,32 @@
+.cursorDot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+
+.cursorRing {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid var(--primary);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  /* mix-blend-mode difference allows tracing high contrast over dark areas */
+  mix-blend-mode: difference;
+}
+
+/* Fallback for light theme visibility */
+:global([data-theme="light"]) .cursorDot,
+:global([data-theme="light"]) .cursorRing {
+  mix-blend-mode: multiply;
+}

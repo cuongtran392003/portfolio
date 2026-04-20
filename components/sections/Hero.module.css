@@ -1,7 +1,8 @@
 .hero {
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
   overflow: hidden;
   padding-top: 80px; /* Offset for navbar */

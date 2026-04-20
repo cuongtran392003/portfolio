@@ -5,15 +5,31 @@ interface ProjectCardProps {
   title: string;
   description: string;
   tech: string;
-  icon?: string;
-  link: string;
+  icon?: React.ReactNode;
+  logoSrc?: string;
+  onClick: () => void;
 }
 
-export const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, tech, icon = '💻', link }) => {
+export const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, tech, icon, logoSrc, onClick }) => {
   return (
-    <a href={link} className={styles.card}>
+    <div 
+      className={styles.card} 
+      onClick={onClick}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          onClick();
+        }
+      }}
+    >
       <div className={styles.imagePlaceholder}>
-        <div className={styles.imageIcon}>{icon}</div>
+        {logoSrc ? (
+          <img src={logoSrc} alt={`${title} logo`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        ) : (
+          <div className={styles.imageIcon}>{icon || '💻'}</div>
+        )}
       </div>
       <div className={styles.content}>
         <h3 className={styles.title}>{title}</h3>
@@ -23,6 +39,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, te
           <span className={styles.linkIcon}>→</span>
         </div>
       </div>
-    </a>
+    </div>
   );
 };

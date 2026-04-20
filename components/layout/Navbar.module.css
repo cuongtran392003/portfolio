@@ -43,9 +43,32 @@
   font-family: var(--font-inter);
   font-weight: 500;
   font-size: 0.95rem;
-  transition: color 0.2s ease;
+  transition: all 0.2s ease;
+  position: relative;
 }
 
 .link:hover {
   color: var(--primary);
 }
+
+.link.active {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--primary);
+  transition: width 0.3s ease;
+}
+
+.link:hover::after,
+.link.active::after {
+  width: 100%;
+}
+
