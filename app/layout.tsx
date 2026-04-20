@@ -50,6 +50,9 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
+  },
+  verification: {
+    google: 'pMJBPlYTISfenPZgKYa_4fD65vLigk83lQRDixc74yc',
   }
 };
 
