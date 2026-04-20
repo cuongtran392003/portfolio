@@ -1,0 +1,103 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  margin-top: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+  }
+}
+
+.formCard {
+  background: var(--surface-container-low);
+  padding: 3rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(64, 71, 81, 0.3);
+}
+
+.formGroup {
+  margin-bottom: 2rem;
+}
+
+.label {
+  display: block;
+  font-family: var(--font-inter);
+  font-size: 0.875rem;
+  color: var(--on-surface-variant);
+  margin-bottom: 0.5rem;
+}
+
+.input, .textarea {
+  width: 100%;
+  background: var(--surface-container-lowest);
+  border: 1px solid rgba(64, 71, 81, 0.3);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  color: var(--on-surface);
+  font-family: var(--font-inter);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.input:focus, .textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 15px rgba(60, 215, 255, 0.1);
+}
+
+.textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* Contact Info Side */
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: var(--surface-container-high);
+  border-radius: var(--radius-md);
+  border-left: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.infoItem:hover {
+  border-left-color: var(--primary);
+  background: var(--surface-container-highest);
+  transform: translateX(10px);
+}
+
+.infoIcon {
+  width: 48px;
+  height: 48px;
+  background: var(--surface-container-lowest);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  font-size: 1.5rem;
+}
+
+.infoTitle {
+  font-family: var(--font-space-grotesk);
+  color: var(--on-surface);
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.infoValue {
+  color: var(--on-surface-variant);
+  font-size: 0.95rem;
+}

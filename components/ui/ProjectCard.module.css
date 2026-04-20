@@ -1,0 +1,88 @@
+.card {
+  background: var(--surface-container-high);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  border: var(--border-ghost);
+  position: relative;
+  height: 100%;
+}
+
+.card:hover {
+  background: var(--surface-container-highest);
+  transform: translateY(-8px);
+  box-shadow: var(--cyan-glow);
+  border-color: rgba(60, 215, 255, 0.3);
+}
+
+.imagePlaceholder {
+  height: 240px;
+  background: var(--surface-container-lowest);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Image simulated content */
+.imageIcon {
+  font-size: 3rem;
+  opacity: 0.5;
+  color: var(--on-surface-variant);
+  transition: all 0.3s ease;
+}
+
+.card:hover .imageIcon {
+  transform: scale(1.1);
+  color: var(--primary);
+  opacity: 0.8;
+}
+
+.content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.title {
+  font-family: var(--font-space-grotesk);
+  font-size: 1.25rem;
+  color: var(--on-surface);
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  color: var(--on-surface-variant);
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.techStack {
+  font-family: var(--font-inter);
+  font-size: 0.75rem;
+  color: var(--primary);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.linkIcon {
+  color: var(--on-surface);
+  opacity: 0.5;
+  transition: opacity 0.2s ease;
+}
+
+.card:hover .linkIcon {
+  opacity: 1;
+  color: var(--primary);
+}
