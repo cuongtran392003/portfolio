@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="120" fill="#0e141a" />
+  
+  <g stroke="#3cd7ff" stroke-width="48" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Letter C -->
+    <path d="M 220,180 A 100,100 0 0 0 120,280 A 100,100 0 0 0 220,380" />
+    <!-- Letter T -->
+    <path d="M 280,180 L 420,180" />
+    <path d="M 350,180 L 350,380" />
+  </g>
+</svg>
