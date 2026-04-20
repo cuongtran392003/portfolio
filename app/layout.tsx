@@ -19,11 +19,11 @@ export const metadata: Metadata = {
   keywords: ["Cuong Tran", "Software Engineer", "Frontend Developer", "Next.js", "React", "Portfolio", "Web Development"],
   authors: [{ name: "Cuong Tran", url: "https://github.com/cuongtran392003" }],
   creator: "Cuong Tran",
-  metadataBase: new URL('https://cuongtran.dev'), // Update to actual domain later
+  metadataBase: new URL('https://portfolio-cuongtran.vercel.app'),
   openGraph: {
     title: "Cuong Tran | Software Engineer",
     description: "Portfolio of Cuong Tran, building sophisticated digital systems.",
-    url: "https://cuongtran.dev",
+    url: "https://portfolio-cuongtran.vercel.app",
     siteName: "Cuong Tran Portfolio",
     locale: "en_US",
     type: "website",

@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/', // Add paths to hide if necessary
     },
-    sitemap: 'https://cuongtran.dev/sitemap.xml',
+    sitemap: 'https://portfolio-cuongtran.vercel.app/sitemap.xml',
   };
 }
