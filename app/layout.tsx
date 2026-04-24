@@ -18,6 +18,7 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: "Cuong Tran | Software Engineer - Frontend Developer",
+  applicationName: "Cuong Tran Portfolio",
   description: "Portfolio of Cuong Tran (Trần Cường), a Software Engineer in Vietnam focusing on clean code, scalable architecture, and modern web experiences. UI/UX and Frontend Development specialist.",
   keywords: [
     "Cuong Tran", "Cường Trần", "Trần Cường", 
