@@ -36,12 +36,21 @@ export const metadata: Metadata = {
     siteName: "Cuong Tran Portfolio",
     locale: "en_US",
     type: "profile",
+    images: [
+      {
+        url: "/og-image.jpg", // Tấm ảnh Preview khi share link (1200x630px)
+        width: 1200,
+        height: 630,
+        alt: "Cuong Tran - Fullstack & Mobile Developer",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Cuong Tran | Software Engineer",
     description: "Portfolio of Cuong Tran, building sophisticated digital systems.",
     creator: "@cuongtran",
+    images: ["/og-image.jpg"],
   },
   robots: {
     index: true,
