@@ -17,28 +17,31 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Cuong Tran | Software Engineer - Frontend Developer",
+  title: "Trần Mạnh Cường (Cuong Tran) | Fullstack Web & Mobile Developer",
   applicationName: "Cuong Tran Portfolio",
-  description: "Portfolio of Cuong Tran (Trần Cường), a Software Engineer in Vietnam focusing on clean code, scalable architecture, and modern web experiences. UI/UX and Frontend Development specialist.",
+  description: "Portfolio of Trần Mạnh Cường (Cuong Tran) - A passionate Software Engineer in Vietnam specialized in Fullstack Web Development (React, Next.js, Node.js) and Mobile App Development (React Native). View my latest projects and technical expertise.",
   keywords: [
-    "Cuong Tran", "Cường Trần", "Trần Cường", 
-    "Cuong Tran Portfolio", "Software Engineer Vietnam", 
+    "Trần Mạnh Cường", "Cuong Tran", "Cường Trần", "Cuong Tran Portfolio", 
+    "Trần Mạnh Cường Portfolio", "Software Engineer Vietnam", 
+    "Fullstack Developer", "Lập trình viên Fullstack", "Web Developer",
+    "Mobile Developer", "Lập trình viên Mobile", "React Native Developer", 
     "Frontend Developer", "Next.js Developer", "React Developer",
-    "Lập trình viên Frontend", "Kỹ sư phần mềm"
+    "Node.js", "NestJS", "TypeScript", "JavaScript", "PHP", "WordPress",
+    "MySQL", "MongoDB", "Tailwind CSS", "Kỹ sư phần mềm Việt Nam"
   ],
   authors: [{ name: "Cuong Tran", url: "https://github.com/cuongtran392003" }],
   creator: "Cuong Tran",
   metadataBase: new URL('https://mynet.id.vn'),
   openGraph: {
-    title: "Cuong Tran | Software Engineer",
-    description: "Portfolio of Cuong Tran, building sophisticated digital systems.",
+    title: "Trần Mạnh Cường | Fullstack Web & Mobile Developer",
+    description: "Portfolio of Trần Mạnh Cường (Cuong Tran) - Specialized in Fullstack Web & Mobile App Development.",
     url: "https://mynet.id.vn",
     siteName: "Cuong Tran Portfolio",
     locale: "en_US",
     type: "profile",
     images: [
       {
-        url: "/og-image.jpg", // Tấm ảnh Preview khi share link (1200x630px)
+        url: "https://mynet.id.vn/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Cuong Tran - Fullstack & Mobile Developer",
@@ -47,10 +50,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cuong Tran | Software Engineer",
-    description: "Portfolio of Cuong Tran, building sophisticated digital systems.",
+    title: "Trần Mạnh Cường | Fullstack Web & Mobile Developer",
+    description: "Portfolio of Trần Mạnh Cường (Cuong Tran) - Specialized in Fullstack Web & Mobile App Development.",
     creator: "@cuongtran",
-    images: ["/og-image.jpg"],
+    images: ["https://mynet.id.vn/og-image.jpg"],
   },
   robots: {
     index: true,
