@@ -9,8 +9,8 @@ import { TechMarquee } from '../ui/TechMarquee';
 import { Hexagon, Layers, Cpu, Rocket } from 'lucide-react';
 
 export const Hero = () => {
-  const { language } = useStore();
-  const dict = dictionaries[language].hero;
+  const { language, persona } = useStore();
+  const dict = dictionaries[language][persona].hero;
 
   return (
     <section className={`section ${styles.hero}`} id="about">

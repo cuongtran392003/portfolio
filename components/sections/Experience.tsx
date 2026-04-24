@@ -7,8 +7,8 @@ import { dictionaries } from '@/lib/i18n';
 import { FadeIn } from '../ui/FadeIn';
 
 export const Experience = () => {
-  const { language } = useStore();
-  const dict = dictionaries[language].experience;
+  const { language, persona } = useStore();
+  const dict = dictionaries[language][persona].experience;
 
   const experiences = [
     {

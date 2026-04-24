@@ -9,8 +9,8 @@ import { Activity, ShieldCheck, Layers } from 'lucide-react';
 import { ProjectModal } from '../ui/ProjectModal';
 
 export const Projects = () => {
-  const { language } = useStore();
-  const dict = dictionaries[language].projects;
+  const { language, persona } = useStore();
+  const dict = dictionaries[language][persona].projects;
   const [selectedProject, setSelectedProject] = useState<any>(null);
 
   const projects = [

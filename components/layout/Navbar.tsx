@@ -5,6 +5,7 @@ import { Button } from '../ui/Button';
 import { useStore } from '@/lib/store';
 import { dictionaries } from '@/lib/i18n';
 import { Sun, Moon } from 'lucide-react';
+import { PersonaToggle } from '../ui/PersonaToggle';
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -52,6 +53,7 @@ export const Navbar = () => {
       </div>
 
       <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+        <PersonaToggle />
         <button 
           onClick={toggleTheme}
           style={{
