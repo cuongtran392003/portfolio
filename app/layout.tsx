@@ -27,11 +27,11 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Cuong Tran", url: "https://github.com/cuongtran392003" }],
   creator: "Cuong Tran",
-  metadataBase: new URL('https://portfolio-cuongtran.vercel.app'),
+  metadataBase: new URL('https://mynet.id.vn'),
   openGraph: {
     title: "Cuong Tran | Software Engineer",
     description: "Portfolio of Cuong Tran, building sophisticated digital systems.",
-    url: "https://portfolio-cuongtran.vercel.app",
+    url: "https://mynet.id.vn",
     siteName: "Cuong Tran Portfolio",
     locale: "en_US",
     type: "profile",
@@ -69,7 +69,7 @@ export default function RootLayout({
     "@type": "Person",
     "name": "Cuong Tran",
     "alternateName": "Trần Cường",
-    "url": "https://portfolio-cuongtran.vercel.app",
+    "url": "https://mynet.id.vn",
     "jobTitle": "Software Engineer",
     "sameAs": [
       "https://github.com/cuongtran392003",
