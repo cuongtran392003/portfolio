@@ -5,8 +5,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: '/private/', // Add paths to hide if necessary
+      disallow: '/private/',
     },
-    sitemap: 'https://portfolio-cuongtran.vercel.app/sitemap.xml',
+    sitemap: 'https://mynet.id.vn/sitemap.xml',
   };
 }
